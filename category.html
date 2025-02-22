@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Categories</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="icon" type="logooo.png" href="logooo.png">
+    <link rel="stylesheet" href="category.css">
+</head>
+<body>
+    <header>
+        <section id="header">
+            <a href="#"><img src="logooo.png" class="logo" alt=""></a>
+            <div>
+                <ul id="navbar">
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a class="active" href="Category.html">Category</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <input type="text" id="searchBox" placeholder="Search for categories..." onkeyup="searchCategories()">
+    </header>
+
+    <div class="container">
+        <!-- Left side: Categories -->
+        <div class="categories">
+            <div class="category" onclick="showProducts('mobiles')">Mobiles</div>
+            <div class="category" onclick="showProducts('watches')">Watches & Accessories</div>
+            <div class="category" onclick="showProducts('mensClothes')">Men's Clothes</div>
+            <div class="category" onclick="showProducts('electronicApplinces')">Electronic Appliances</div>
+            <div class="category" onclick="showProducts('electricApplinces')">Electric Appliances</div>
+            <div class="category" onclick="showProducts('toys')">Toys</div>
+            <div class="category" onclick="showProducts('healthandbeauty')">Health & Beauty</div>
+            <div class="category" onclick="showProducts('footballjersey')">Football Jersey</div>
+            <div class="category" onclick="showProducts('womensClothes')">Women's Clothes</div>
+            <div class="category" onclick="showProducts('childrensClothes')">Children's Clothes</div>
+            <div class="category" onclick="showProducts('shoes')">Shoes</div>
+            <div class="category" onclick="showProducts('footballcleats')">Football Cleats</div>
+        </div>
+
+        <!-- Right side: Product display -->
+        <div id="productDisplay" class="product-display"></div>
+    </div>
+    <footer class="section-p1">
+        <div class="col">
+            <img src="logooo.png" alt="" class="dipak1">
+            <h4><strong>Contact</strong></h4>
+            <p><strong>Address:</strong></p>
+            <p><strong>Phone:+977-9810822935</strong></p>
+            <p><strong>Email:Jholanp@gmail.com</strong></p>
+        
+        <div class="follow">
+            <h4><strong>Follow Us</strong></h4>
+            <div class="icon">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"> <i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="aboutus.html">About us</a>
+            <a href="deliveryinfo.html">Delivery Information</a>
+            <a href="PrivacyPolicy.html">Privacy Policy</a>
+            <a href="terms&condition.html">Terms & Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="profile.html">Sign In</a>
+            <a href="cart.html">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="trackmyorder.html">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>© 2025, Jholanp. All Rights Reserved</p>
+        </div>
+    </footer>
+    
+    <script src="category.js"></script>
+</body>
+</html>
